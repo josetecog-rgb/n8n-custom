@@ -40,4 +40,4 @@ jobs:
         with:
           context: ./ffmpeg-api
           push: true
-          tags: ghcr.io/josetecog-rgb/ffmpeg-api:latest
+          tags: ghcr.io/josetecog-rgb/n8n-custom:ffmpeg-api
