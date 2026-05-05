@@ -1,6 +1,7 @@
 FROM n8nio/n8n:stable
 USER root
-RUN apk add --no-cache ffmpeg python3 py3-pip && \
-    pip install edge-tts
+RUN apt-get update && \
+    apt-get install -y ffmpeg python3-pip && \
+    pip install edge-tts && \
+    apt-get clean
 USER node
-ENV PATH="/home/node/.local/bin:$PATH"
